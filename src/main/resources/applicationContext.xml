@@ -19,7 +19,7 @@
 	<context:annotation-config></context:annotation-config>
 	
 								<!-- OU CHERCHER LES BEANS -->
-	<context:component-scan base-package="AeroportSpring.model,AeroportSpring.Repositories, AeroportSpring.Services"></context:component-scan>
+	<context:component-scan base-package="AeroportSpring.model,AeroportSpring.services"></context:component-scan>
 	
 								<!-- DECLARATION DATASOURCE -->
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
@@ -62,6 +62,10 @@
 	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"></bean>
 
 								<!-- CREATION REPOSITORY JPA -->
+<<<<<<< HEAD
 	<jpa:repositories base-package="AeroportSpring.Repositories"></jpa:repositories>
+=======
+	<jpa:repositories base-package="AeroportSpring.repositories"></jpa:repositories>
+>>>>>>> master
 
 </beans>
