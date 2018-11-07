@@ -1,8 +1,5 @@
 package AeroportSpring.model;
-<<<<<<< HEAD
 
-=======
->>>>>>> mathieu
 public enum TitrePhysique {
 	
 	M("Monsieur"), MME("Madame"), MLLE("Mademoiselle");

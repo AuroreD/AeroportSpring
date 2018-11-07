@@ -1,8 +1,5 @@
 package AeroportSpring.model;
-<<<<<<< HEAD
 
-=======
->>>>>>> mathieu
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 

@@ -1,8 +1,5 @@
 package AeroportSpring.model;
-<<<<<<< HEAD
 
-=======
->>>>>>> mathieu
 import java.util.Date;
 
 import javax.persistence.Column;
