@@ -1,4 +1,4 @@
-package ProjetAeroport.model;
+package AeroportSpring.model;
 
 import java.util.List;
 import java.util.Set;

@@ -1,6 +1,4 @@
-package ProjetAeroport.model;
-
-import java.io.Serializable;
+package AeroportSpring.model;
 
 import javax.persistence.Embeddable;
 

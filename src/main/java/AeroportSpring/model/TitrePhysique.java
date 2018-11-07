@@ -1,4 +1,4 @@
-package ProjetAeroport.model;
+package AeroportSpring.model;
 
 public enum TitrePhysique {
 	
