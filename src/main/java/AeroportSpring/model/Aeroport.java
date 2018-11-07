@@ -39,10 +39,10 @@ public class Aeroport {
 	@OneToMany(mappedBy = "aeroportArrivee")
 	private Set<Vol> volsArrivee;
 	
-	@OneToMany(mappedBy = "key.aeroport")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.aeroport")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private Set<Escale> escale;
 	
-	@OneToMany(mappedBy = "key.aeroport")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.aeroport")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private Set<VilleAeroport> villeAeroports;
 	
 	@Version

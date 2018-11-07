@@ -28,7 +28,7 @@ public class Ville {
 	@Version
 	private int version;
 
-	@OneToMany(mappedBy = "key.ville")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.ville")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private List<VilleAeroport> villeAeroports;
 	
 	public Ville() {
