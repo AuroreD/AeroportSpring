@@ -19,10 +19,10 @@ public class VolRepositoryTest {
 	public void test() {
 			assertNotNull(volRepository);
 			System.out.println(volRepository.findAllReservation());
-			System.out.println(volRepository.findAllAeroportDepart());
-			System.out.println(volRepository.findAllAeroportArrivee());
+			System.out.println(volRepository.findAllAeroportDepartAndAeroportArrivee());
 			System.out.println(volRepository.findAllEscale());
 			System.out.println(volRepository.findAllCompagnieAerienneVol());
 			System.out.println(volRepository.findAllCompagnieAerienne());		
 	}
+
 }
