@@ -18,7 +18,6 @@ public class CompagnieAerienneRepositoryTest {
 	@Test
 	public void test() {
 		assertNotNull(compagnieAerienneRepository);
-		//System.out.println(compagnieAerienneRepository.findAllCompagnieAerienneVol());
-		//System.out.println(compagnieAerienneRepository.findAllVol());
+		System.out.println(compagnieAerienneRepository.findAllWithCompagnieAerienneVol());
 	}
 }

@@ -18,10 +18,8 @@ import javax.persistence.Version;
 @Table(name = "Compagnie_Aerienne")
 @SequenceGenerator(name = "seqCompagnieAerienne", sequenceName = "seq_compagnies_aeriennes", initialValue = 1, allocationSize = 1)
 @NamedQueries({
-	@NamedQuery(name = "CA.findAllCompagnieAerienneVol" , 
-			query = "select distinct ca from CompagnieAerienne ca left join fetch ca.compagnieAerienneVol"),
-	@NamedQuery(name = "CA.findAllVol", 
-			query = "select distinct ca from CompagnieAerienne ca left join fetch ca.compagnieAerienneVol cav left join fetch cav.key.vol")
+		@NamedQuery(name = "CompagnieAerienne.findAllWithCompagnieAerienneVol", query = "select distinct ca from CompagnieAerienne ca left join fetch ca.compagnieAerienneVol"),
+
 })
 public class CompagnieAerienne {
 
@@ -29,16 +27,16 @@ public class CompagnieAerienne {
 	@Column(name = "id_compagnie_aerienne", length = 10)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqCompagnieAerienne")
 	private Long id;
-	
+
 	@Column(name = "nom_compagnie_aerienne", length = 50)
 	private String nom;
-	
-	@OneToMany(mappedBy = "key.compagnieAerienne")		// erreur � ignorer si cl� compos�e
+
+	@OneToMany(mappedBy = "key.compagnieAerienne") // erreur � ignorer si cl� compos�e
 	private List<CompagnieAerienneVol> compagnieAerienneVol;
-	
+
 	@Version
 	private int version;
-	
+
 	public CompagnieAerienne() {
 	}
 
