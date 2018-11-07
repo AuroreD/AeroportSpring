@@ -13,7 +13,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import AeroportSpring.Repositories.ReservationRepository;
 import AeroportSpring.Repositories.VolRepository;
-import AeroportSpring.Services.ClientService;
 import AeroportSpring.model.Adresse;
 import AeroportSpring.model.Client;
 import AeroportSpring.model.ClientPhysique;
@@ -21,6 +20,7 @@ import AeroportSpring.model.Login;
 import AeroportSpring.model.Passager;
 import AeroportSpring.model.Reservation;
 import AeroportSpring.model.Vol;
+import AeroportSpring.services.ClientService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext.xml" })

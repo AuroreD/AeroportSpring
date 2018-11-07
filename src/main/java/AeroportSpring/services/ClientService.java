@@ -1,4 +1,4 @@
-package AeroportSpring.Services;
+package AeroportSpring.services;
 
 import java.util.ArrayList;
 import java.util.List;
