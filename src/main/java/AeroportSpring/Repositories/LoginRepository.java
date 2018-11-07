@@ -6,4 +6,5 @@ import AeroportSpring.model.Login;
 
 public interface LoginRepository extends JpaRepository<Login, Long> {
 
+	Login findByLogin(String login);
 }
