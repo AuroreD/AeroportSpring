@@ -1,5 +1,4 @@
-package ProjetAeroport.model;
-
+package AeroportSpring.model;
 public enum TitreMoral {
 
 	SASU("Sasu"), EI("EI"), SA("SA"), SAS("SAS"), SARL("SARL"), SCI("SCI");

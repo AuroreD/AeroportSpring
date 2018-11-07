@@ -1,5 +1,4 @@
-package ProjetAeroport.model;
-
+package AeroportSpring.model;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 

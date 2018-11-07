@@ -1,5 +1,4 @@
-package ProjetAeroport.model;
-
+package AeroportSpring.model;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;

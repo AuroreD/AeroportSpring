@@ -1,5 +1,4 @@
-package ProjetAeroport.model;
-
+package AeroportSpring.model;
 import java.util.Date;
 
 import javax.persistence.Column;

@@ -1,5 +1,4 @@
-package ProjetAeroport.model;
-
+package AeroportSpring.model;
 public enum TitrePhysique {
 	
 	M("Monsieur"), MME("Madame"), MLLE("Mademoiselle");
