@@ -1,5 +1,8 @@
 package AeroportSpring.model;
+<<<<<<< HEAD
 
+=======
+>>>>>>> mathieu
 import java.io.Serializable;
 
 import javax.persistence.Embeddable;

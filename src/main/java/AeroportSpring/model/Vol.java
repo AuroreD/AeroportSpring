@@ -1,5 +1,8 @@
 package AeroportSpring.model;
+<<<<<<< HEAD
 
+=======
+>>>>>>> mathieu
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -68,10 +71,10 @@ public class Vol {
 	@JoinColumn(name = "aeroport_arrivee_id")
 	private Aeroport aeroportArrivee;
 	
-	@OneToMany(mappedBy = "key.vol")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.vol")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private Set<CompagnieAerienneVol> compagnieAerienneVol;
 	
-	@OneToMany(mappedBy = "key.vol")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.vol")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private Set<Escale> escale;
 	
 	@OneToMany(mappedBy = "vol")

@@ -1,5 +1,8 @@
 package AeroportSpring.model;
+<<<<<<< HEAD
 
+=======
+>>>>>>> mathieu
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 

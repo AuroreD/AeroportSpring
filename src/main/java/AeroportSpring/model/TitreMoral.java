@@ -1,5 +1,8 @@
 package AeroportSpring.model;
+<<<<<<< HEAD
 
+=======
+>>>>>>> mathieu
 public enum TitreMoral {
 
 	SASU("Sasu"), EI("EI"), SA("SA"), SAS("SAS"), SARL("SARL"), SCI("SCI");

@@ -1,5 +1,8 @@
 package AeroportSpring.model;
+<<<<<<< HEAD
 
+=======
+>>>>>>> mathieu
 import java.util.List;
 
 import javax.persistence.Column;
@@ -33,7 +36,7 @@ public class CompagnieAerienne {
 	@Column(name = "nom_compagnie_aerienne", length = 50)
 	private String nom;
 	
-	@OneToMany(mappedBy = "key.compagnieAerienne")		// erreur à ignorer si clé composée
+	@OneToMany(mappedBy = "key.compagnieAerienne")		// erreur ï¿½ ignorer si clï¿½ composï¿½e
 	private List<CompagnieAerienneVol> compagnieAerienneVol;
 	
 	@Version
