@@ -16,11 +16,11 @@ import javax.persistence.Version;
 @Entity
 @SequenceGenerator (name="seqVille",sequenceName="seq_ville", initialValue = 1 , allocationSize=1)
 @NamedQueries({
-@NamedQuery(name = "Ville.findAllAeroport", 
-	query = "select distinct v from Ville v left join fetch v.villeAeroports va left join fetch va.key.aeroport"),
+	@NamedQuery(name = "Ville.findAllAeroport", 
+			query = "select distinct v from Ville v left join fetch v.villeAeroports va left join fetch va.key.aeroport"),
 // attention jpql n'aime pas cette ecriture de requete multiple
-@NamedQuery(name = "Ville.findByNomAllAeroport", 
-query = "select distinct v from Ville v left join fetch v.villeAeroports va left join fetch va.key.aeroport where v.nom=:nom")
+	@NamedQuery(name = "Ville.findAllAeroportByNom", 
+		query = "select distinct v from Ville v left join fetch v.villeAeroports va left join fetch va.key.aeroport where v.nom=:nom")
 })
 public class Ville {
 	
