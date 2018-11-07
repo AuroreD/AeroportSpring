@@ -37,7 +37,7 @@ public class TestServiceClient {
 	@Test
 	public void test() {
 		
-		
+		// test création login & attribution login déjà existant
 		Client clientPhysique = null;
 		
 		clientPhysique = (ClientPhysique) clientService.createClientPhysique();
@@ -52,7 +52,7 @@ public class TestServiceClient {
 		Client clientPhysique2 = (ClientPhysique) clientService.CreateClientPhysique("Paul",login,adresse);
 		assertNotNull(clientPhysique2);
 
-		
+		//test  récupérer l'ensemble des vols d'un client
 		
 		Vol vol = new Vol();
 		vol = VolRepository.save(vol);
