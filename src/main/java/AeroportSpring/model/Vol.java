@@ -35,7 +35,7 @@ import javax.persistence.Version;
 	@NamedQuery(name = "Vol.findAllCompagnieAerienneVol" , 
 			query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol"),
 	@NamedQuery(name = "Vol.findAllCompagnieAerienne", 
-	query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol cav left join fetch cav.key.compagnieAerienne")
+	query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol cav left join fetch cav.key.compagnieAerienne"),
 })
 public class Vol {
 
