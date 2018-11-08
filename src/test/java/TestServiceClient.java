@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import AeroportSpring.Repositories.ReservationRepository;
-import AeroportSpring.Repositories.VolRepository;
 import AeroportSpring.model.Adresse;
 import AeroportSpring.model.Client;
 import AeroportSpring.model.ClientPhysique;
@@ -20,6 +18,9 @@ import AeroportSpring.model.Login;
 import AeroportSpring.model.Passager;
 import AeroportSpring.model.Reservation;
 import AeroportSpring.model.Vol;
+import AeroportSpring.repositories.PassagerRepository;
+import AeroportSpring.repositories.ReservationRepository;
+import AeroportSpring.repositories.VolRepository;
 import AeroportSpring.services.ClientService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -33,6 +34,8 @@ public class TestServiceClient {
 	VolRepository VolRepository ;
 	@Autowired
 	ReservationRepository reservationRepository;
+	@Autowired
+	PassagerRepository passagerRepository;
 
 	@Test
 	public void test() {
@@ -73,10 +76,17 @@ public class TestServiceClient {
 			
 		reservation.setClient(clientPhysique2);
 		
+		Passager passager = new Passager("Jean", "Martin");
+
+		
+		passager = passagerRepository.save(passager);
+		
+		reservation.setPassager(passager);
+		
 		reservation = reservationRepository.save(reservation);
 		
 		System.out.println(clientService.numVolPrint(clientPhysique2.getId()));
-		
+		System.out.println(clientService.findAllPassager(clientPhysique2.getId()));
 	}
 
 }

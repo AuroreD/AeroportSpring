@@ -31,7 +31,6 @@ import javax.persistence.Version;
 	@NamedQuery(name = "Vol.findAllCompagnieAerienneVol" , 
 			query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol"),
 	@NamedQuery(name = "Vol.findAllCompagnieAerienne", 
-<<<<<<< HEAD
 		query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol cav left join fetch cav.key.compagnieAerienne"),
 	@NamedQuery(name = "Vol.findAllEscaleById" , 
 		query = "select distinct v from Vol v left join fetch v.escale where v.id=:id"),
@@ -42,9 +41,6 @@ import javax.persistence.Version;
 	@NamedQuery(name = "Vol.findAllCompagnieAerienneById", 
 		query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol cav left join fetch cav.key.compagnieAerienne "
 				+ "where v.id=:id")
-=======
-	query = "select distinct v from Vol v left join fetch v.compagnieAerienneVol cav left join fetch cav.key.compagnieAerienne"),
->>>>>>> 723da76aa2ffe9d94cdeb599dab9c9beb0315adb
 })
 public class Vol {
 

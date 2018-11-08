@@ -6,9 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import AeroportSpring.Repositories.VolRepository;
 import AeroportSpring.model.Aeroport;
 import AeroportSpring.model.Vol;
+import AeroportSpring.repositories.VolRepository;
 
 @Service
 public class VolService {

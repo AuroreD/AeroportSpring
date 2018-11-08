@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import AeroportSpring.Repositories.AeroportRepository;
-import AeroportSpring.Repositories.VolRepository;
+import AeroportSpring.repositories.AeroportRepository;
+import AeroportSpring.repositories.VolRepository;
 import AeroportSpring.services.AeroportService;
 
 @RunWith(SpringJUnit4ClassRunner.class)

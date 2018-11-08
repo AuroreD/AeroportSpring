@@ -16,7 +16,7 @@ import javax.persistence.Version;
 
 @Entity
 @Table(name = "passager")
-@SequenceGenerator(name = "seqPassager", sequenceName = "pass_seq_id", initialValue = 50, allocationSize = 1)
+@SequenceGenerator(name = "seqPassager", sequenceName = "pass_seq_id", initialValue =50, allocationSize = 1)
 public class Passager {
 
 	@Id
@@ -35,15 +35,6 @@ public class Passager {
 	@OneToMany(mappedBy = "passager")
 	private List<Reservation> reservations = new ArrayList<>();
 
-	public Passager(Long id, String nom, String prenom, int version, Adresse adresse, List<Reservation> reservations) {
-		super();
-		this.id = id;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.version = version;
-		this.adresse = adresse;
-		this.reservations = reservations;
-	}
 
 	public int getVersion() {
 		return version;
@@ -77,11 +68,11 @@ public class Passager {
 
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -109,9 +100,6 @@ public class Passager {
 		this.adresse = adresse;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	@Override
 	public int hashCode() {

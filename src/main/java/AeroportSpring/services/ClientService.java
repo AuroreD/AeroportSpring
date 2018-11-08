@@ -7,8 +7,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import AeroportSpring.Repositories.ClientRepository;
-import AeroportSpring.Repositories.LoginRepository;
 import AeroportSpring.model.Adresse;
 import AeroportSpring.model.Client;
 import AeroportSpring.model.ClientEI;
@@ -17,6 +15,8 @@ import AeroportSpring.model.Login;
 import AeroportSpring.model.Passager;
 import AeroportSpring.model.Reservation;
 import AeroportSpring.model.TitrePhysique;
+import AeroportSpring.repositories.ClientRepository;
+import AeroportSpring.repositories.LoginRepository;
 
 @Service
 public class ClientService {
@@ -50,11 +50,8 @@ public class ClientService {
 	}
 
 	public List<Reservation> reservationGet(Long id) {
-		
-		Client client = null;
-
-		List<Reservation> reservations;
-		client =  (Client) clientRepository.clientGetReservation(id);
+	
+		Client client = clientRepository.clientGetReservation(id);
 		return client.getReservations();
 	}
 

@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import AeroportSpring.Repositories.VilleRepository;
 import AeroportSpring.model.Ville;
+import AeroportSpring.repositories.VilleRepository;
 
 @Service
 public class VilleService {

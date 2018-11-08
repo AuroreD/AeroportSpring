@@ -1,4 +1,4 @@
-package AeroportSpring.Repositories;
+package AeroportSpring.repositories;
 
 import java.util.List;
 import java.util.Optional;

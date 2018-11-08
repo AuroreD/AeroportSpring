@@ -1,4 +1,4 @@
-package AeroportSpring.Repositories;
+package AeroportSpring.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
