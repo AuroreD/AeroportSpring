@@ -61,11 +61,8 @@
 								<!-- ACTIVATION GESTION EXCEPTION SPRING -->
 	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"></bean>
 
-								<!-- CREATION REPOSITORY JPA -->
-<<<<<<< HEAD
-	<jpa:repositories base-package="AeroportSpring.Repositories"></jpa:repositories>
-=======
-	<jpa:repositories base-package="AeroportSpring.repositories"></jpa:repositories>
->>>>>>> master
+
+
+	<jpa:repositories base-package="AeroportSpring.repositories, AeroportSpring.Repositories"></jpa:repositories>
 
 </beans>

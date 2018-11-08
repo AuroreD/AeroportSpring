@@ -61,7 +61,7 @@ public class ClientService {
 	// ------------------- Methodes principales -----------------------------
 
 	public String numVolPrint(Long id) {
-		String s = null;
+		String s = "";
 		Client client = null;
 
 		if (this.clientExist(id)) {
